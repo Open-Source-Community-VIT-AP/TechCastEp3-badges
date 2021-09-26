@@ -1,0 +1,117 @@
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 5rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event_name{
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 40px 0 10px 0;
+}
+
+.event_details{
+  font-size: 1.5rem;
+  font-weight: 300;
+  /* margin: 20px 0; */
+  color: #808080;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* ticket */
+.ticket_container{
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ticket_container button{
+  background-color: white;
+  padding: 10px 16px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.ticket_container button:hover{
+  background-color: rgb(0, 0, 0);
+  padding: 10px 16px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+.ticket{
+  width: 220px;
+  height: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: url('../public/ticketbg.png');
+  background-size: cover;
+  border: 3px solid #FFC300;
+  border-radius: 20px;
+  padding: 22px;
+}
+.ticket_date{
+  width: 100%;
+}
+.ticket_event_name{
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.ticket_profile img{
+  border-radius: 100px;
+  height: 65px;
+  width: 65px;
+}
+
+.ticket_profile{
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .footer a {
+    width: 100%;
+    flex-direction: column;
+  }
+  .event_name{
+    font-size: 1.2rem;
+  }
+  .event_details{
+    font-size: 0.7rem;
+  }
+}
